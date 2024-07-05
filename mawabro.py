@@ -6,8 +6,6 @@ import requests
 import datetime
 import os
 
-														
-								   
 # insert your Telegram bot token here
 bot = telebot.TeleBot('7468132796:AAGqdy8EGOkkfkxmcHR_mPXPL8_aMIfQJAE')
 
@@ -22,7 +20,6 @@ LOG_FILE = "log.txt"
 
 
 # Function to read user IDs from the file
-		   
 # List of proxy addresses
 PROXIES = [
 
@@ -3561,7 +3558,6 @@ PROXIES = [
 "https://72.10.164.178:31985",
     # Join :- @MawaCheats # Add more proxy addresses as needed
 ]
-
 def read_users():
     try:
         with open(USER_FILE, "r") as file:
@@ -3837,8 +3833,8 @@ def show_help(message):
 🤖 To See Admin Commands:
 💥 /admincmd : Shows All Admin Commands.
 
-Buy From :- @kushwaha_307,@DivinexAv
-Official Channel :- t.me/RX100OFFIiCIAL
+Buy From :- @MawaCheats,@MawaCheats
+Official Channel :- t.me/MawaCheats
 '''
     for handler in bot.message_handlers:
         if hasattr(handler, 'commands'):
@@ -3855,7 +3851,7 @@ def welcome_start(message):
     user_name = message.from_user.first_name
     response = f'''👋🏻Welcome to Your Home, {user_name}! Feel Free to Explore.
 🤖Try To Run This Command : /help 
-✅Join :- t.me/RX100OFFIiCIAL'''
+✅Join :- t.me/MawaCheats'''
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['rules'])
